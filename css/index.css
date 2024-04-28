@@ -16,24 +16,34 @@
     transition: min-width 0.5s ease, box-shadow 0.5s ease, right 0.5s ease;
 }
 
+@font-face {
+    font-family: 'Jost';
+    src: url('fonts/Jost-Regular.woff2') format('woff2'),
+         url('fonts/Jost-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .page-title {
-    font-size: 40px;
+    font-family: 'Jost', sans-serif; /* Use Jost font */
+    font-size: 30px;
     border: solid 2px;
     border-color: #686868;
     border-top: 1px;
     border-left: 1px;
     border-right: 1px;
-    margin: 65px 45px;
+    margin: 55px 45px;
     transition: font-size 0.5s ease, margin 0.5s ease, border-color 0.5s ease;
 }
 
 .page-title.active {
-    font-size: 60px;
+    font-family: 'Jost', sans-serif; /* Use Jost font */
+    font-size: 50px;
     border: solid 1px;
     border-color: #ffffff;
     border-top: 1px;
     border-left: 1px;
     border-right: 1px;
-    margin: 40px 80px;
+    margin: 60px 80px;
     transition: font-size 0.5s ease, margin 0.5s ease, border-color 0.5s ease;
 }
