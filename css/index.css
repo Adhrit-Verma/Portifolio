@@ -1,7 +1,7 @@
 .page {
     border-radius: 20px 70px 70px 20px;
     min-height: 100vh;
-    min-width: 20%;
+    min-width: 25%;
     box-shadow: 10px 3px 6px rgba(0, 0, 0, 0.16);
     right: 1.6%;
     transition: min-width 0.5s ease, box-shadow 0.5s ease, right 0.5s ease;
@@ -9,7 +9,7 @@
 
 .page.active {
     min-height: 100vh;
-    min-width: 60%;
+    min-width: 65%;
     border-radius: 20px 70px 70px 20px;
     box-shadow: 10px 5px 6px rgba(0, 0, 0, 0.36);
     right: 1%;
@@ -28,14 +28,14 @@
     font-family: 'Jost', sans-serif;
     /* Use Jost font */
     align-content: center;
-    font-size: 25px;
+    font-size: 35px;
     border: solid 2px;
     border-color: #686868;
     border-top: 1px;
     border-left: 1px;
     border-right: 1px;
     margin: 15px 45px;
-    margin-top: 65px;
+    margin-top: 60px;
     padding-bottom: 10px;
     transition: font-size 0.5s ease, margin 0.5s ease, border-color 0.5s ease, padding-bottom 0.5s ease;
 }
@@ -63,6 +63,7 @@
 }
 
 .container-profile.active {
+    display: flex;
     background-color: blue;
     height: 50%;
     margin: 0px 80px;
@@ -70,16 +71,82 @@
 }
 
 
-.container-profile-2{
+.container-profile-2 {
     background-color: red;
     height: 0%;
     margin: 10px 45px;
     transition: margin 0.5s ease, height 0.5s ease;
 }
 
-.container-profile-2.active{
+.container-profile-2.active {
     background-color: red;
     height: 25%;
     margin: 10px 80px;
     transition: margin 0.5s ease, height 0.5s ease;
+}
+
+.pf.active {
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 81.5%;
+    transition: left 0.5s ease;
+    overflow: hidden;
+}
+
+.pf{
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 23%;
+    transition: left 0.5s ease;
+    overflow:hidden;
+}
+
+.crop{
+    position: absolute;
+    top:-10%;
+    left: -51%;
+    width: 200%;
+}
+
+.typing-container{
+    background-color: black ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 200px;
+    width: 300px;
+    position: relative;
+    top:0.1%;
+    right: 0%;
+    left: 11%;
+    transition: right 0.5s ease, width 0.5s ease, top 0.5s ease, left 0.5s ease;
+}
+
+.typing-container.active{
+    background-color: rgb(255, 17, 17) ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 200px;
+    width: 600px;
+    position: relative;
+    top:0%;
+    right: 18.6%;
+    left: -18.6%;
+    transition: right 0.5s ease, width 0.5s ease, top 0.5s ease, left 0.5s ease;
+}
+
+.font-hello{
+    font-size:20px;
+}
+
+.font-hello.active{
+    font-size:40px;
+}
+
+.font-sent1{
+    font-size: 40px;
+}
+.font-sent1.active{
+    font-size: 50px;
 }

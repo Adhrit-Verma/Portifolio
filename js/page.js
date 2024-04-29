@@ -15,6 +15,22 @@ pages.forEach(page => {
                     if (containerProfile2) {
                         containerProfile2.classList.remove('active');
                     }
+                    const profileImage = otherPage.querySelector('.pf');
+                    if (profileImage) {
+                        profileImage.classList.remove('active');
+                    }
+                    const textbox1 = otherPage.querySelector('.typing-container');
+                    if (textbox1) {
+                        textbox1.classList.remove('active');
+                    }
+                    const font1 = otherPage.querySelector('.font-hello');
+                    if (font1) {
+                        font1.classList.remove('active');
+                    }
+                    const font2 = otherPage.querySelector('.font-hello');
+                    if (font2) {
+                        font2.classList.remove('active');
+                    }
                 }
             });
             page.classList.add('active');
@@ -26,6 +42,22 @@ pages.forEach(page => {
             const containerProfile2 = page.querySelector('.container-profile-2');
             if (containerProfile2) {
                 containerProfile2.classList.add('active');
+            }
+            const profileImage = page.querySelector('.pf');
+            if (profileImage) {
+                profileImage.classList.add('active');
+            }
+            const textbox1 = page.querySelector('.typing-container');
+            if (textbox1) {
+                textbox1.classList.add('active');
+            }
+            const font1 = page.querySelector('.typing-container');
+            if (font1) {
+                font1.classList.add('active');
+            }
+            const font2 = page.querySelector('.typing-container');
+            if (font2) {
+                font2.classList.add('active');
             }
         }
     });
