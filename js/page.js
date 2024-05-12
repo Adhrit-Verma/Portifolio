@@ -27,7 +27,7 @@ pages.forEach(page => {
                     if (font1) {
                         font1.classList.remove('active');
                     }
-                    const font2 = otherPage.querySelector('.font-hello');
+                    const font2 = otherPage.querySelector('.font-sent1');
                     if (font2) {
                         font2.classList.remove('active');
                     }
@@ -51,11 +51,11 @@ pages.forEach(page => {
             if (textbox1) {
                 textbox1.classList.add('active');
             }
-            const font1 = page.querySelector('.typing-container');
+            const font1 = page.querySelector('.font-hello');
             if (font1) {
                 font1.classList.add('active');
             }
-            const font2 = page.querySelector('.typing-container');
+            const font2 = page.querySelector('.font-sent1');
             if (font2) {
                 font2.classList.add('active');
             }

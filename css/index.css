@@ -56,7 +56,6 @@
 }
 
 .container-profile {
-    background-color: blue;
     height: 80%;
     margin: 0px 45px;
     transition: margin 0.5s ease, height 0.5s ease;
@@ -64,7 +63,6 @@
 
 .container-profile.active {
     display: flex;
-    background-color: blue;
     height: 50%;
     margin: 0px 80px;
     transition: margin 0.5s ease, height 0.5s ease;
@@ -113,7 +111,6 @@
 }
 
 .typing-container{
-    background-color: black ;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 200px;
     width: 300px;
@@ -125,7 +122,6 @@
 }
 
 .typing-container.active{
-    background-color: rgb(255, 17, 17) ;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 200px;
     width: 600px;
@@ -137,16 +133,52 @@
 }
 
 .font-hello{
-    font-size:20px;
+    text-align: center;
+    font-size:30px;
+    transition: font-size 0.5s ease;
 }
 
 .font-hello.active{
+    text-align: left;
     font-size:40px;
+    transition: font-size 0.5s ease;
 }
 
 .font-sent1{
     font-size: 40px;
+    transition: font-size 0.5s ease;
 }
 .font-sent1.active{
     font-size: 50px;
+    transition: font-size 0.5s ease;
 }
+
+
+.typing-animation {
+    color: yellow;
+    font-size: 40px;
+    border-right: 2px solid #333;
+    white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Cursor styles */
+  .typing-animation::after {
+    animation: blink-caret 1s step-end infinite;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
